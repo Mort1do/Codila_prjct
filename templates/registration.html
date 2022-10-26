@@ -1,0 +1,36 @@
+{% extends '/base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <form method="post">
+        <body class="text-center">
+        <main class="form-signin w-100 m-auto">
+            <form>
+                <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                <h1 class=" h3 mb-3 fw-normal">Please sign up</h1>
+                <div class="form-floating">
+                    <input type="Fname" name="Fname" class="form-control" id="Fname" placeholder="Your first user name"><br>
+                    <label for="Fname">Come up with user name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="Lname" name="Lname" class="form-control" id="Lname" placeholder="Your last user name"><br>
+                    <label for="Lname">Come up with user name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com"><br>
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Password"><br>
+                    <label for="password">Come up with password</label>
+                </div>
+                <input type="submit" class="btn btn-success" value="Sign up">
+            </form>
+        </body>
+    </form>
+</div>
+{% endblock %}
